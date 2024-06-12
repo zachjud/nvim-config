@@ -129,7 +129,7 @@ require("lazy").setup({
     lazy = true,
     cmd = { 'KittyScrollbackGenerateKittens', 'KittyScrollbackCheckHealth' },
     event = { 'User KittyScrollbackLaunch' },
-  }
+  },
 })
 
 -- Configuration Lspconfig
@@ -166,3 +166,6 @@ require("trouble").setup()
 
 -- Kitty-Scrollback
 require('kitty-scrollback').setup()
+
+-- Lualine
+require("plugins.lualine")
