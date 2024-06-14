@@ -70,8 +70,10 @@ require("lazy").setup({
   -- Telescope
   {
     'nvim-telescope/telescope.nvim', branch = '0.1.x',
-    dependencies = { 'nvim-lua/plenary.nvim' }
+    dependencies = { 'nvim-lua/plenary.nvim'}
   },
+  -- Telescope fzf
+  { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
   -- Dropbar
   {
     'Bekaboo/dropbar.nvim',
@@ -155,9 +157,6 @@ require('obsidian').setup({
 -- Noice
 require("plugins.noice")
 
---Lualine
-require("lualine").setup()
-
 -- Tabby
 require("plugins.tabby")
 
@@ -169,3 +168,6 @@ require('kitty-scrollback').setup()
 
 -- Lualine
 require("plugins.lualine")
+
+-- Telescope
+require('plugins.telescope')
